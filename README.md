@@ -7,6 +7,9 @@ Information within consists of arduino code to read the load cell on various dev
 So far the data will cover the following ADC's/load cell boards:
 
 -HX711 Load Cell Board
+
 -ATMEGA2560 build-in ADC
+
 -Texas Insturments ADS1115 ADC
+
 -Texas Insturments ADS1015 ADC
