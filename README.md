@@ -8,7 +8,7 @@ So far the data will cover the following ADC's/load cell boards:
 
 -HX711 Load Cell Board
 
--ATMEGA2560 build-in ADC
+-ATMEGA2560 built-in ADC
 
 -Texas Insturments ADS1115 ADC
 
