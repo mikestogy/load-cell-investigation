@@ -4,12 +4,17 @@ The purpose of this project is to investigate strain gauge load cells. While the
 
 Information within consists of arduino code to read the load cell on various devices, python programs to visaluize and process the data, and (hopefully) detailed writeups on the operation, collection, and analysis of the device and collected data.
 
-So far the data will cover the following ADC's/load cell boards:
+Boards covered:
 
--HX711 Load Cell Board
 
 -ATMEGA2560 built-in ADC
 
 -Texas Insturments ADS1115 ADC
 
 -Texas Insturments ADS1015 ADC
+
+Boards to be covered in the future:
+
+-HX711 Load Cell Board
+
+-Texas Insturments ADS1256 ADC
