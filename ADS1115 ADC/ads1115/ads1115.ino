@@ -16,12 +16,13 @@ void configureADS1115() {
   Wire.endTransmission();  // Send the request for data
 }
 
-uint16_t conversion() {
+int16_t conversion() {
   // Send read request to ADS1115
   Wire.requestFrom(0b01001000, 2);
   uint8_t MSB = Wire.read();
   uint8_t LSB = Wire.read();
-  return LSB | (MSB << 8) - 65360;
+  int16_t data = LSB | (MSB << 8);
+  return data;
 }
 
 void setup() {
@@ -43,11 +44,5 @@ void setup() {
 
 void loop() {
 
-  // Send read request to ADS1115
-  Wire.requestFrom(0b01001000, 2);
-  uint8_t MSB = Wire.read();
-  uint8_t LSB = Wire.read();
-  int16_t data = LSB | (MSB << 8);
-
-  Serial.println((String)micros() + " " + (data + 190));
+  Serial.println((String)micros() + " " + (conversion() + 188));
 }
