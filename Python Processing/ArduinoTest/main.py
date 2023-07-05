@@ -23,6 +23,8 @@ while counter < 1000:
         counter += 1
 print("Finished")
 serialInst.close()
+serialInst.close()
+
 
 # Converts each value in rawLineList to usable/desired format into a new list of lists
 cleanLineList = []
